@@ -5,7 +5,7 @@ let nameFile = '';
 process.argv.length > 2 ? nameFile = process.argv[2].replace(/[^a-zа-яё_-]/gi, '') + '.txt' : nameFile = 'log.txt';
 
 const filePath = path.join(__dirname, 'log', nameFile);
-//const filePath = require('./games').file;
+//const filePath = require('./games');
 
 fs.readFile(filePath, 'utf-8', (err, data) => {
     if (err) throw Error(err);

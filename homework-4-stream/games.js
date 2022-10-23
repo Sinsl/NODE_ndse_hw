@@ -6,7 +6,7 @@ process.argv.length > 2 ? nameFile = process.argv[2].replace(/[^a-zа-яё_-]/gi
 
 const filePath = path.join(__dirname, 'log', nameFile);
 
-//module.exports.file = filePath;
+//module.exports = filePath;
 
 console.log('Игра запущена!');
 console.log(`Загадано 1 или 2. Для выхода введите 0.`);
